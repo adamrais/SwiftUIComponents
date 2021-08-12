@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		E50A87A226C40E7F00D2517E /* SwiftUIComponentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50A87A126C40E7F00D2517E /* SwiftUIComponentsApp.swift */; };
-		E50A87A426C40E7F00D2517E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50A87A326C40E7F00D2517E /* ContentView.swift */; };
 		E50A87A626C40E8000D2517E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E50A87A526C40E8000D2517E /* Assets.xcassets */; };
 		E50A87A926C40E8000D2517E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E50A87A826C40E8000D2517E /* Preview Assets.xcassets */; };
+		E50A87B226C45E9300D2517E /* SetPasswordUIContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50A87B126C45E9300D2517E /* SetPasswordUIContentView.swift */; };
+		E50A87B626C4B51000D2517E /* LabelViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50A87B526C4B51000D2517E /* LabelViewComponent.swift */; };
+		E50A87B826C4BD7300D2517E /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50A87B726C4BD7300D2517E /* ViewModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E50A879E26C40E7F00D2517E /* SwiftUIComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E50A87A126C40E7F00D2517E /* SwiftUIComponentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIComponentsApp.swift; sourceTree = "<group>"; };
-		E50A87A326C40E7F00D2517E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E50A87A526C40E8000D2517E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E50A87A826C40E8000D2517E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E50A87AA26C40E8000D2517E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E50A87B126C45E9300D2517E /* SetPasswordUIContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordUIContentView.swift; sourceTree = "<group>"; };
+		E50A87B526C4B51000D2517E /* LabelViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewComponent.swift; sourceTree = "<group>"; };
+		E50A87B726C4BD7300D2517E /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,8 @@
 		E50A87A026C40E7F00D2517E /* SwiftUIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				E50A87B026C45E4D00D2517E /* SetPasswordUI */,
 				E50A87A126C40E7F00D2517E /* SwiftUIComponentsApp.swift */,
-				E50A87A326C40E7F00D2517E /* ContentView.swift */,
 				E50A87A526C40E8000D2517E /* Assets.xcassets */,
 				E50A87AA26C40E8000D2517E /* Info.plist */,
 				E50A87A726C40E8000D2517E /* Preview Content */,
@@ -67,6 +71,24 @@
 				E50A87A826C40E8000D2517E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E50A87B026C45E4D00D2517E /* SetPasswordUI */ = {
+			isa = PBXGroup;
+			children = (
+				E50A87B426C45F6700D2517E /* ViewHelpers */,
+				E50A87B126C45E9300D2517E /* SetPasswordUIContentView.swift */,
+				E50A87B726C4BD7300D2517E /* ViewModifiers.swift */,
+			);
+			path = SetPasswordUI;
+			sourceTree = "<group>";
+		};
+		E50A87B426C45F6700D2517E /* ViewHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				E50A87B526C4B51000D2517E /* LabelViewComponent.swift */,
+			);
+			path = ViewHelpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E50A87A426C40E7F00D2517E /* ContentView.swift in Sources */,
+				E50A87B626C4B51000D2517E /* LabelViewComponent.swift in Sources */,
+				E50A87B226C45E9300D2517E /* SetPasswordUIContentView.swift in Sources */,
 				E50A87A226C40E7F00D2517E /* SwiftUIComponentsApp.swift in Sources */,
+				E50A87B826C4BD7300D2517E /* ViewModifiers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
