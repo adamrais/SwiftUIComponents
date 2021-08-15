@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct SetPasswordUIContentView: View {
     
@@ -15,6 +16,8 @@ struct SetPasswordUIContentView: View {
     
     @State private var isChecked = false
     @State private var passwordField: String = ""
+    @State private var isPasswordVisible = false
+    @StateObject var vm = viewModel(hasSpecialChar: false, hasNumber: false, hasEnoughChar: false)
     var body: some View {
         NavigationView {
             VStack {
@@ -22,15 +25,31 @@ struct SetPasswordUIContentView: View {
                     Text("Set Your Password")                        .modifier(titleModifier())
                 }.padding()
                 
-                VStack(alignment: .leading) {
-                    SecureField("", text: $passwordField)
-                        .modifier(secureFieldModifier())
+                ZStack(alignment: .trailing) {
+                    Group {
+                        if isPasswordVisible {
+                            TextField("", text: $vm.password)
+                        } else {
+                            SecureField("", text: $vm.password)
+                        }
+                    }.modifier(secureFieldModifier())
+                    .onChange(of: vm.password) { value in
+                        vm.hasSpecialChar = vm.hasSpecialChar(password: vm.password)
+                        vm.hasNumber = vm.hasNumber(password: vm.password)
+                        vm.hasEnoughChar = vm.hasEnoughChar(password: vm.password)
+                    }
+                    Button(action: {
+                        isPasswordVisible.toggle()
+                    }) {
+                        Image(systemName: self.isPasswordVisible ? "eye" : "eye.slash")
+                            .accentColor(.gray)
+                    }.padding()
                 }.padding()
                 
                 VStack(alignment: .leading) {
-                    LabelViewComponent(title: "Add one special character", isChecked: $isChecked)
-                    LabelViewComponent(title: "Add one number", isChecked: $isChecked)
-                    LabelViewComponent(title: "Has more than 8 characters", isChecked: $isChecked)
+                    LabelViewComponent(title: "Has one special character", isChecked: $vm.hasSpecialChar)
+                    LabelViewComponent(title: "Has one number", isChecked: $vm.hasNumber)
+                    LabelViewComponent(title: "Has more than 8 characters", isChecked: $vm.hasEnoughChar)
                 }
                 
                 Spacer()
