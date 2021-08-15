@@ -14,7 +14,6 @@
 		E50A87B626C4B51000D2517E /* LabelViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50A87B526C4B51000D2517E /* LabelViewComponent.swift */; };
 		E50A87B826C4BD7300D2517E /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50A87B726C4BD7300D2517E /* ViewModifiers.swift */; };
 		E50A87BB26C602DE00D2517E /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50A87BA26C602DE00D2517E /* ModelView.swift */; };
-		E50A87BD26C61F9100D2517E /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50A87BC26C61F9100D2517E /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		E50A87B526C4B51000D2517E /* LabelViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewComponent.swift; sourceTree = "<group>"; };
 		E50A87B726C4BD7300D2517E /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		E50A87BA26C602DE00D2517E /* ModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelView.swift; sourceTree = "<group>"; };
-		E50A87BC26C61F9100D2517E /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +82,6 @@
 				E50A87B426C45F6700D2517E /* ViewHelpers */,
 				E50A87B126C45E9300D2517E /* SetPasswordUIContentView.swift */,
 				E50A87B726C4BD7300D2517E /* ViewModifiers.swift */,
-				E50A87BC26C61F9100D2517E /* test.swift */,
 			);
 			path = SetPasswordUI;
 			sourceTree = "<group>";
@@ -175,7 +172,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E50A87B626C4B51000D2517E /* LabelViewComponent.swift in Sources */,
-				E50A87BD26C61F9100D2517E /* test.swift in Sources */,
 				E50A87B226C45E9300D2517E /* SetPasswordUIContentView.swift in Sources */,
 				E50A87A226C40E7F00D2517E /* SwiftUIComponentsApp.swift in Sources */,
 				E50A87B826C4BD7300D2517E /* ViewModifiers.swift in Sources */,
