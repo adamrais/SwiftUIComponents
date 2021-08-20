@@ -12,7 +12,8 @@ struct SearchBarMainView: View {
     
     var body: some View {
         SearchBar(text: $searchText)
-            .padding(.top, -30)
+            .padding(.top, -350)
+            .padding()
     }
 }
 

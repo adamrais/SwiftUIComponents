@@ -14,6 +14,7 @@
 		E50A87B626C4B51000D2517E /* LabelViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50A87B526C4B51000D2517E /* LabelViewComponent.swift */; };
 		E50A87B826C4BD7300D2517E /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50A87B726C4BD7300D2517E /* ViewModifiers.swift */; };
 		E50A87BB26C602DE00D2517E /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50A87BA26C602DE00D2517E /* ModelView.swift */; };
+		E5BBFB0E26CEEF3400DFC701 /* ClearButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BBFB0D26CEEF3400DFC701 /* ClearButtonView.swift */; };
 		E5D51E6226C9703A005A6E1D /* SearchBarMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D51E6126C9703A005A6E1D /* SearchBarMainView.swift */; };
 		E5D51E6526C9CDF1005A6E1D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D51E6426C9CDF1005A6E1D /* SearchBar.swift */; };
 		E5D51E6826C9D054005A6E1D /* ViewModifiersSB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D51E6726C9D054005A6E1D /* ViewModifiersSB.swift */; };
@@ -29,6 +30,7 @@
 		E50A87B526C4B51000D2517E /* LabelViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewComponent.swift; sourceTree = "<group>"; };
 		E50A87B726C4BD7300D2517E /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		E50A87BA26C602DE00D2517E /* ModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelView.swift; sourceTree = "<group>"; };
+		E5BBFB0D26CEEF3400DFC701 /* ClearButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearButtonView.swift; sourceTree = "<group>"; };
 		E5D51E6126C9703A005A6E1D /* SearchBarMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarMainView.swift; sourceTree = "<group>"; };
 		E5D51E6426C9CDF1005A6E1D /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		E5D51E6726C9D054005A6E1D /* ViewModifiersSB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiersSB.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 		E50A87A026C40E7F00D2517E /* SwiftUIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				E5BBFB0C26CEEF1B00DFC701 /* ClearButtonUI */,
 				E5D51E6026C97017005A6E1D /* SearchBarUI */,
 				E50A87B026C45E4D00D2517E /* SetPasswordUI */,
 				E50A87A126C40E7F00D2517E /* SwiftUIComponentsApp.swift */,
@@ -107,6 +110,14 @@
 				E50A87BA26C602DE00D2517E /* ModelView.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E5BBFB0C26CEEF1B00DFC701 /* ClearButtonUI */ = {
+			isa = PBXGroup;
+			children = (
+				E5BBFB0D26CEEF3400DFC701 /* ClearButtonView.swift */,
+			);
+			path = ClearButtonUI;
 			sourceTree = "<group>";
 		};
 		E5D51E6026C97017005A6E1D /* SearchBarUI */ = {
@@ -198,6 +209,7 @@
 			files = (
 				E5D51E6526C9CDF1005A6E1D /* SearchBar.swift in Sources */,
 				E50A87B626C4B51000D2517E /* LabelViewComponent.swift in Sources */,
+				E5BBFB0E26CEEF3400DFC701 /* ClearButtonView.swift in Sources */,
 				E5D51E6226C9703A005A6E1D /* SearchBarMainView.swift in Sources */,
 				E5D51E6826C9D054005A6E1D /* ViewModifiersSB.swift in Sources */,
 				E50A87B226C45E9300D2517E /* SetPasswordUIContentView.swift in Sources */,
